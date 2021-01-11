@@ -21,8 +21,7 @@
 #define LEADER_PER_KEY_TIMING 500
 #define USB_POLLING_INTERVAL_MS 1
 #define TAPPING_TOGGLE 3
-// #define PERMISSIVE_HOLD
-// #define IGNORE_MOD_TAP_INTERRUPT
+#define IGNORE_MOD_TAP_INTERRUPT
 // #define TAPPING_FORCE_HOLD
 
 // place overrides here
