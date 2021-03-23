@@ -8,7 +8,11 @@ enum custom_keycodes {
     FN_ALF4 , // Key that sends Alt + F4
     FN_EKEY , // Key that sends Shift + F10
     FN_TAB4 , // Key that sends Tab 4 times
-    FN_HOME   // Key that sends Tab 4 times
+    FN_HOME , // Key that changes layers
+    FN_RPAR , // Key that sends right parentheses
+    FN_LPAR , // Key that sends left parentheses
+    FN_MINS , // Key that sends '-'
+    FN_EQL    // Key that sends '=' (KC_PEQL doesn't work on Windows)
 };
 
 // Define layers
@@ -83,6 +87,28 @@ bool process_record_user(uint16_t keycode , keyrecord_t *record) {
                 layer_off(_FKL);
                 layer_on(_DEF);
               } else {}
+            break;
+        case FN_RPAR:
+            if (record->event.pressed) {
+                SEND_STRING("(");
+              } else {}
+            break;
+        case FN_LPAR:
+            if (record->event.pressed) {
+                SEND_STRING(")");
+              } else {}
+            break;
+        case FN_EQL:
+            if (record->event.pressed) {
+                // Send Home + Shift (down) + End + Shift (up)
+                SEND_STRING("=");
+            } else {}
+            break;
+        case FN_MINS:
+            if (record->event.pressed) {
+                // Send Home + Shift (down) + End + Shift (up)
+                SEND_STRING("-");
+            } else {}
             break;
     }
   return true;
