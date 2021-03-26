@@ -34,28 +34,28 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL , KC_LGUI  , KC_LALT ,                          FN_SPACE                        , TT(_FKL), KC_LEAD , KC_LEAD , KC_LEFT , KC_DOWN , KC_RGHT
     ),
     [_FUN] = LAYOUT_65_ansi(
-        KC_GRV  , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , _______ , FN_HOME ,\
-        _______ , FN_CTL1 , FN_CTL2 , FN_CTL3 , FN_CTL4 , FN_TKEY , FN_YKEY , KC_PGUP , _______ , KC_PGDN , KC_BSPC , _______ , _______ , KC_BSLS , _______ ,\
+        KC_GRV  , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , _______ , _______ ,\
+        _______ , FN_CTL1 , FN_CTL2 , FN_CTL3 , FN_CTL4 , FN_TKEY , FN_YKEY , KC_PGUP , _______ , KC_PGDN , KC_BSPC , FN_CMIN , FN_CPLU , KC_BSLS , _______ ,\
         KC_GRV  , _______,  _______ , FN_ATAB , FN_CTL0 , FN_CSH0 , KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , FN_CTLW , FN_CTST , _______           , KC_MPLY ,\
         _______ , FN_EKEY , FN_ALF4 , FN_CTLC , FN_CTLV , KC_HOME , KC_END  , KC_DEL  , _______ , _______ , _______ , _______           , KC_VOLU , KC_MUTE ,\
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , KC_MPRV , KC_VOLD , KC_MNXT
     ),
     [_MOU] = LAYOUT_65_ansi(
-        _______ , _______ , _______ , _______ , _______ , RGB_HUD , RGB_HUI , RGB_SAI , RGB_SAD , RGB_MOD , RGB_TOG , RGB_VAD , RGB_VAI , _______ , FN_HOME,\
+        _______ , _______ , _______ , _______ , _______ , RGB_HUD , RGB_HUI , RGB_SAI , RGB_SAD , RGB_MOD , RGB_TOG , RGB_VAD , RGB_VAI , _______ , _______ ,\
         _______ , KC_BTN1 , KC_MS_U , KC_BTN2 , KC_WH_U , _______ , _______ , KC_WH_U , KC_MS_U , KC_WH_D , _______ , _______ , _______ , _______ , _______ ,\
         _______ , KC_MS_L , KC_MS_D , KC_MS_R , KC_WH_D , _______ , _______ , KC_MS_L , KC_MS_D , KC_MS_R , _______ , _______ , _______           , _______ ,\
         _______ , FN_CTAD , RESET   , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , KC_BRIU , _______ ,\
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , _______ , KC_BRID , _______
     ),
     [_NUM] = LAYOUT_65_ansi(
-        _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , FN_HOME,\
-        _______ , FN_MINS , KC_UNDS , FN_EQL  , KC_PLUS , KC_TILD , _______ , _______ , FN_RPAR , FN_LPAR , _______ , _______ , _______ , KC_BSLS , _______ ,\
-        KC_GRV  , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , _______ , _______           , _______ ,\
-        _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , _______ , _______ ,\
+        _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ ,\
+        _______ , KC_EXLM , KC_AT   , KC_HASH , KC_DLR  , KC_PERC , KC_CIRC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_UNDS , KC_PLUS , KC_BSLS , _______ ,\
+        KC_GRV  , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_MINS , KC_EQL            , _______ ,\
+        _______ , KC_MINS , KC_UNDS , KC_EQL  , KC_PLUS , KC_TILD , KC_GRV  , _______ , FN_RPAR , FN_LPAR , _______ , _______           , _______ , _______ ,
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , _______ , _______ , _______
     ),
     [_FKL] = LAYOUT_65_ansi(
-        _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , FN_HOME,\
+        _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ ,\
         _______ , _______ , _______ , _______ , _______ , FN_FKL5 , _______ , _______ , _______ , _______ , _______ , _______ , _______ , KC_BSLS , _______ ,\
         KC_GRV  , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , _______ , _______           , _______ ,\
         _______ , _______ , _______ , KC_F11  , KC_F12  , _______ , _______ , _______ , _______ , _______ , _______ , _______           , _______ , _______ ,\

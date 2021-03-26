@@ -25,7 +25,7 @@ enum custom_keycodes {
 // Define special keycodes
 #define FN_CTAD LCTL(LALT(KC_DEL))
 #define FN_CAPS LT(_NUM, KC_ESC)
-#define FN_SPACE LT(k_FUN , KC_SPC)
+#define FN_SPACE LT(_FUN , KC_SPC)
 #define FN_TAB LT(_MOU , KC_TAB)
 #define FN_ATAB LCA(KC_TAB)
 #define FN_CTST LCTL(LSFT(KC_T))
@@ -38,6 +38,8 @@ enum custom_keycodes {
 #define FN_CTL2 LCTL(KC_2)
 #define FN_CTL3 LCTL(KC_3)
 #define FN_CTL4 LCTL(KC_4)
+#define FN_CPLU LCTL(KC_PLUS)
+#define FN_CMIN LCTL(KC_MINS)
 #define FN_FKL5 LSFT(KC_F5)
 #define FN_TKEY LCA(KC_T)
 
