@@ -34,10 +34,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL , KC_LGUI  , KC_LALT ,                          FN_SPACE                        , TT(_NUM), KC_LEAD , KC_LEAD , KC_LEFT , KC_DOWN , KC_RGHT
     ),
     [_FUN] = LAYOUT_65_ansi(
-        KC_GRV  , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , _______ , FN_HOME,\
-        _______ , FN_CTL1 , FN_CTL2 , FN_CTL3 , FN_CTL4 , FN_TKEY , FN_YKEY , KC_PGUP , KC_UP   , KC_PGDN , KC_BSPC , _______ , _______ , KC_BSLS , _______ ,\
-        KC_GRV  , FN_TAB4 , _______ , FN_ATAB , FN_CTL0 , FN_CSH0 , KC_HOME , KC_LEFT , KC_DOWN , KC_RGHT , FN_CTLW , FN_CTST , _______           , KC_MPLY ,\
-        _______ , FN_EKEY , FN_ALF4 , FN_CTLC , FN_CTLV , _______ , KC_END  , KC_DEL  , _______ , _______ , _______ , _______           , KC_VOLU , KC_MUTE ,\
+        KC_GRV  , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , _______ , FN_HOME ,\
+        _______ , FN_CTL1 , FN_CTL2 , FN_CTL3 , FN_CTL4 , FN_TKEY , FN_YKEY , KC_PGUP , _______ , KC_PGDN , KC_BSPC , _______ , _______ , KC_BSLS , _______ ,\
+        KC_GRV  , _______,  _______ , FN_ATAB , FN_CTL0 , FN_CSH0 , KC_LEFT , KC_DOWN , KC_UP   , KC_RGHT , FN_CTLW , FN_CTST , _______           , KC_MPLY ,\
+        _______ , FN_EKEY , FN_ALF4 , FN_CTLC , FN_CTLV , KC_HOME , KC_END  , KC_DEL  , _______ , _______ , _______ , _______           , KC_VOLU , KC_MUTE ,\
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , KC_MPRV , KC_VOLD , KC_MNXT
     ),
     [_MOU] = LAYOUT_65_ansi(
