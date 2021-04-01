@@ -42,16 +42,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_MOU] = LAYOUT_65_ansi(
         _______ , _______ , _______ , _______ , _______ , RGB_HUD , RGB_HUI , RGB_SAI , RGB_SAD , RGB_MOD , RGB_TOG , RGB_VAD , RGB_VAI , _______ , _______ ,\
-        _______ , KC_BTN1 , KC_MS_U , KC_BTN2 , KC_WH_U , _______ , _______ , KC_WH_U , KC_MS_U , KC_WH_D , _______ , _______ , _______ , _______ , _______ ,\
-        _______ , KC_MS_L , KC_MS_D , KC_MS_R , KC_WH_D , _______ , _______ , KC_MS_L , KC_MS_D , KC_MS_R , _______ , _______ , _______           , _______ ,\
-        _______ , FN_CTAD , RESET   , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______           , KC_BRIU , _______ ,\
+        _______ , KC_BTN1 , KC_MS_U , KC_BTN2 , KC_WH_U , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ ,\
+        _______ , KC_MS_L , KC_MS_D , KC_MS_R , KC_WH_D , _______ , KC_MS_L , KC_MS_D , KC_MS_U , KC_MS_R , _______ , _______ , _______           , _______ ,\
+        _______ , FN_CTAD , RESET   , _______ , _______ , KC_WH_U , KC_WH_D , _______ , _______ , _______ , _______ , _______           , KC_BRIU , _______ ,\
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , _______ , KC_BRID , _______
     ),
     [_NUM] = LAYOUT_65_ansi(
         _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ , _______ ,\
         _______ , KC_EXLM , KC_AT   , KC_HASH , KC_DLR  , KC_PERC , KC_CIRC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_UNDS , KC_PLUS , KC_BSLS , _______ ,\
         KC_GRV  , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    , KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_MINS , KC_EQL            , _______ ,\
-        _______ , KC_MINS , KC_UNDS , KC_EQL  , KC_PLUS , KC_TILD , KC_GRV  , _______ , FN_RPAR , FN_LPAR , _______ , _______           , _______ , _______ ,
+        _______ , _______ , _______ , _______ , KC_EQL  , KC_TILD , KC_UNDS , _______ , _______ , _______ , _______ , _______           , _______ , _______ ,
         _______ , _______ , _______ ,                          _______                          , _______ , _______ , _______ , _______ , _______ , _______
     ),
     [_FKL] = LAYOUT_65_ansi(
@@ -82,10 +82,10 @@ void matrix_scan_user(void) {
         }
 
         // IP addresses
-        SEQ_TWO_KEYS(KC_I, KC_Q) {SEND_STRING("ping 192.168.163.58");}
-        SEQ_TWO_KEYS(KC_I, KC_W) {SEND_STRING("ping 192.168.163.111");}
+        SEQ_TWO_KEYS(KC_I, KC_Q) {SEND_STRING("192.168.163.58");}
+        SEQ_TWO_KEYS(KC_I, KC_W) {SEND_STRING("192.168.163.111");}
         SEQ_TWO_KEYS(KC_I, KC_G) {SEND_STRING("ping google.com");}
-        SEQ_TWO_KEYS(KC_I, KC_R) {SEND_STRING("ping 10.10..1");SEND_STRING(SS_TAP(X_LEFT));SEND_STRING(SS_TAP(X_LEFT));}
+        SEQ_TWO_KEYS(KC_I, KC_R) {SEND_STRING("10.10..1");SEND_STRING(SS_TAP(X_LEFT));SEND_STRING(SS_TAP(X_LEFT));}
 
         // Git commands
         SEQ_TWO_KEYS(KC_G, KC_S) {SEND_STRING("git status"); SEND_STRING(SS_TAP(X_ENTER));}
